@@ -963,15 +963,7 @@ p.text-34 {
 /* profile page */
 .mt {
   margin-top: 100px !important;
-}
-
-.emp-profile {
-  padding: 3%;
-  margin-top: 10%;
-  margin-bottom: 3%;
-  border-radius: 0.5rem;
-  background: #fff;
-}
+} 
 
 .profile-img {
   text-align: center;
@@ -1400,14 +1392,6 @@ tr td span {
   font-weight: 600;
   font-size: 38px;
   color: var(--grey-15, #262626);
-}
-
-.Type_Category {
-  display: flex;
-}
-
-.Type_Category .col-md-3 {
-  padding-left: 25px;
 }
 
 .frame-10 {
