@@ -30,6 +30,11 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   scroll-behavior: smooth;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 p {
@@ -1373,25 +1378,12 @@ tr td span {
 
 /* Start find-assistant page */
 
-
-.container .find-assistant {
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: flex-start;
-  box-sizing: border-box;
-  align-items: flex-start;
-  text-align: left;
-  justify-content: left;
-}
-
-.container .find-assistant .find-assistant-15 {
-  overflow-wrap: break-word;
+.find-assistant {
   font-family: 'Poppins';
   font-weight: 600;
   font-size: 38px;
   color: var(--grey-15, #262626);
+  margin-bottom: 1rem;
 }
 
 .frame-10 {
