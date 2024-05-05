@@ -27,8 +27,6 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   background: var(--secondary-color);
-  background-size: 100%;
-  background-repeat: no-repeat;
   scroll-behavior: smooth;
   min-height: 100dvh;
   display: flex;
