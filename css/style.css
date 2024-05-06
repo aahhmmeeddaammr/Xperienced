@@ -260,7 +260,7 @@ span {
   color: var(--main-color);
 }
 
-.Benefits .container .box .i {
+/* .Benefits .container .box .i {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -269,7 +269,7 @@ span {
   isolation: isolate;
   width: 100px;
   height: 100px;
-}
+} */
 
 .Benefits .container .box p {
   font-size: 16px;
