@@ -1,111 +1,105 @@
 let navContainer=document.querySelector("header");
+console.log(navContainer);
 navContainer.innerHTML=`
-<nav class="navbar navbar-expand-lg navbar-light nav fixed-top">
-<div class="container ">
-  <div class="LOGO my-1" >
-    <a class="navbar-brand w-25" href="index.html"><img class="" src="image/image.png" alt=""></a>
-  </div>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav style="background-color: #1E88E5 !important;" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class=""style="width: 65%;" src="image/image.png" alt="">
 
-  <div class="collapse navbar-collapse" id="navbarScroll">
-    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-      <li class="nav-item">
-        <a class="nav-link fs-5  text-white" aria-current="page" href="Find_Assistant.html">
-          <i class="fa-solid fa-message text-white"></i> 
-          Find Assistant
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fs-5 text-white" href="./Offer_Help.html">
-          <i class="fa-solid fa-plus text-white"></i>
-          Offer Help
-        </a>
-      </li>
-    </ul>
-    <div class="d-flex justify-content-center align-items-center gap-5">
-      <div class="chat dropdown">
-        <a class="vector" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          <i class="fa-solid fa-envelope fs-5"></i>
-        </a>
-        <div class="dropdown-menu notification" aria-labelledby="dropdownMenuLink">
-          <ul class="notification-list border-bottom" data-empty="لا جديد حتى اللحظة!">
-              <li class="notification-list-item ">
-                <img class="notification-item-img " alt="" src="image/image.png">
-                <div class="notification-item-content ms-2 ">
-                  <span id="user">User Name:</span>
-                  <span id="message">A guide for entrepreneurs to get started with the Independent platform</span>
-                  <div class="notification-item-date">
-                    <time datetime="2024-04-25 05:12:01" title="2024-04-25 05:12:01"> <i class="fa fa-clock-o"></i>
-                      4 أيام و 8 ساعات </time>
-                  </div>
-                </div>
-              </li>
-          </ul>
-          <div class="notification-link">
-            <a href="Messages.html"><i class="fa-regular fa-bell"></i> All Messages </a>
-          </div>
-        </div>
-
-      </div>
-      <div class="chat dropdown ">
-        <a class="vector" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          <i class="fa-solid fa-bell fs-5"></i>
-        </a>
-        <div class="dropdown-menu notification border-start" aria-labelledby="dropdownMenuLink">
-          <ul class="notification-list border-bottom" data-empty="لا جديد حتى اللحظة!">
-            <li class="notification-list-item ">
-              <img class="notification-item-img " alt="" src="image/image.png">
-              <div class="notification-item-content ms-2 ">
-                <span id="user">Message:</span>
-                <span id="message">A guide for entrepreneurs to get started with the Independent platform</span>
-                <div class="notification-item-date">
-                  <time datetime="2024-04-25 05:12:01" title="2024-04-25 05:12:01"> <i class="fa fa-clock-o"></i>
-                    4 أيام و 8 ساعات </time>
-                </div>
-              </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="overflow: hidden;">
+            <li class="nav-item">
+              <a class="nav-link fs-5  text-white" aria-current="page" href="Find_Assistant.html">
+                 <i class="fa-solid fa-message text-white"></i> 
+                  Find Assistant
+              </a>
             </li>
-        </ul>
-          <div class="notification-link">
-            <a href="Notifications.html"><i class="fa-regular fa-bell"></i> All Notifications </a>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-white" href="./Offer_Help.html">
+                <i class="fa-solid fa-plus text-white"></i>
+                  Offer Help
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-envelope fs-5"></i>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li style="width: 400px; text-wrap:wrap;" class="notification-list-item dropdown-item border-bottom ">
+                  <div  class="notification-item-content ms-2 ">
+                    <div class="me-2">
+
+                      <img class="notification-item-img " alt="" src="image/image.png">
+                    </div>
+                    <div class="">
+                      <span id="user">User Name:</span>
+                      <span id="message">A guide for entrepreneurs to get started with the Independent platform</span>
+                      <div class="notification-item-date">
+                        <time datetime="2024-04-25 05:12:01" title="2024-04-25 05:12:01"> <i class="fa fa-clock-o"></i>
+                          4 أيام و 8 ساعات </time>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <div class="notification-link">
+                  <a style="text-decoration: none; font-size: 1.2rem; color: #1E88E5;" href="Messages.html"><i class="fa-regular fa-bell"></i> All Messages </a>
+                </div>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown ms-auto">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell fs-5"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li style="width: 400px; text-wrap:wrap;" class="notification-list-item dropdown-item border-bottom ">
+                  <div  class="notification-item-content ms-2 ">
+                    <div class="me-2">
+
+                      <img class="notification-item-img " alt="" src="image/image.png">
+                    </div>
+                    <div class="">
+                      <span id="user">Message:</span>
+                      <span id="message">A guide for entrepreneurs to get started with the Independent platform</span>
+                      <div class="notification-item-date">
+                        <time datetime="2024-04-25 05:12:01" title="2024-04-25 05:12:01"> <i class="fa fa-clock-o"></i>
+                          4 أيام و 8 ساعات </time>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </li>
+                <div class="notification-link">
+                  <a style="text-decoration: none; font-size: 1.2rem; color: #1E88E5;"href="Notifications.html"><i class="fa-regular fa-bell"></i> All Notifications </a>
+                </div>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="rounded-circle p-2 d-flex justify-content-center align-items-center bg-danger text-white " style="width: 25px; height: 25px;" id="UserNameFchar">M</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+
+          </ul>
         </div>
-
       </div>
-      <div class="chat dropdown accunt-content">
-
-        <a class=" dropdown-toggle bg-img" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <span class="rounded-circle p-2 d-flex m-0 justify-content-center align-items-center bg-danger text-white " style="width: 38px; height: 38px;" id="UserNameFchar">M</span>
-        </a>
-
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="Profile.html">
-            <i class="fa fa-fw fa-user"></i>
-            Mohamed Ahmed
-          </a>
-          <a class="dropdown-item" href="Account_Balance.html">
-            <i class="fa fa-fw fa-usd"></i>
-            Balance
-          </a>
-          <hr>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-fw fa-edit"></i>
-            Edit Profile
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-fw fa-sign-out"></i>
-            Logout
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</nav>
+    </nav>
 `
