@@ -1931,11 +1931,7 @@ span.action-text {
 /* end notification page */
 
 @media (max-width:685px) {
-  .header .nav {
-    padding: 0px;
-  }
-
-  .Hero_Section .text-center {
+ .Hero_Section .text-center {
     width: 320px;
     height: 70px;
     margin-right: auto;
@@ -1954,49 +1950,12 @@ span.action-text {
     margin-left: auto;
   }
 
-  .header .navbar .collapse .navbar-nav {
-    height: 500px;
-
-  }
-
-  .navbar-collapse .d-flex {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    justify-content: center;
-  }
-
-  .navbar-collapse .sidepar {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-
-  .navbar-light .navbar-toggler {
-    color: rgba(255, 255, 255, 0.55);
-    border-color: rgb(255, 255, 255);
-    margin-right: 25px;
-  }
-
-  .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-
-  li.nav-item {
-    text-align: center;
-    border-top: 1px solid var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
-
+  .LOGO a img{
+    width: 7dvh !important;
   }
   .notification-list,.notification{
     margin: 0px !important;
-    left: 1%;
+    left: 0%;
       list-style: none;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
       position: absolute;
@@ -2121,10 +2080,7 @@ span.action-text {
     gap: 0px;
   }
 
-  .Logo {
-    width: 40px;
-    height: 40px;
-  }
+ 
 
   .XperiencedAllRightsReserved {
     display: flex;
@@ -2190,6 +2146,11 @@ span.action-text {
     margin-top: 100px;
   }
 
+  .emp-profile {
+    width: 95%;
+    height: 850px;
+  }
+
   .profile-img img {
     width: 70%;
     height: 100%;
@@ -2228,6 +2189,14 @@ span.action-text {
   }
 
   /* profile page */
+  .emp-profile {
+    padding: 3%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
 
   .file.btn.btn-lg.btn-primary {
     position: relative;
@@ -2339,6 +2308,12 @@ span.action-text {
 
   .profile-work {
     margin-top: 0px;
+  }
+
+  .emp-profile {
+    margin-top: 100px;
+    width: 95%;
+    height: 850px;
   }
 
   .profile-head {
@@ -2468,24 +2443,5 @@ span.action-text {
 
   .Balance .filter-form input {
     width: 50%;
-  }
-  .LOGO a img{
-    width: 7dvh !important;
-  }
-    .notification-list,.notification{
-    margin: 0px !important;
-    left: 1%;
-      list-style: none;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-      position: absolute;
-      width: 200px;
-      background-color: #fff;
-      border: 1px solid #e8eaed;
-      border-radius: 5px;
-      border-top: 0;
-      font-family: "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      text-align: left;
-    
   }
 }
