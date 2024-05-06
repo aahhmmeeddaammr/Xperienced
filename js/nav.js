@@ -1,11 +1,10 @@
-let navContainer=document.querySelector("header");
+let navContainer = document.querySelector("header");
 
-navContainer.innerHTML=`
-<nav style="background-color: #1E88E5 !important;" class="navbar navbar-expand-lg navbar-light bg-light">
+navContainer.innerHTML = `
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img class=""style="width: 65%;" src="image/image.png" alt="">
-
+          <img class=""style="width: 50%;" src="image/image.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,8 +24,8 @@ navContainer.innerHTML=`
               </a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " >
-            <li class="nav-item dropdown ">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-envelope fs-5"></i>
               </a>
@@ -35,7 +34,6 @@ navContainer.innerHTML=`
                 <li style="width: 400px; text-wrap:wrap;" class="notification-list-item dropdown-item border-bottom ">
                   <div  class="notification-item-content ms-2 ">
                     <div class="me-2">
-
                       <img class="notification-item-img " alt="" src="image/image.png">
                     </div>
                     <div class="">
@@ -84,23 +82,40 @@ navContainer.innerHTML=`
               </ul>
             </li>
 
-
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="rounded-circle p-2 d-flex justify-content-center align-items-center bg-danger text-white " style="width: 25px; height: 25px;" id="UserNameFchar">M</span>
+                <img class="img-navb" src="https://avatars.hsoubcdn.com/ec365cbde984baac6669282ae0242d02?s=128">
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="../Profile.html">
+                    <i class="fa fa-fw fa-user"></i>
+                    Mohamed Ahmed
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Account_Balance.html">
+                      <i class="fa fa-fw fa-usd"></i>
+                      Balance
+                  </a>
+                </li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <a class="dropdown-item" href="../Edit_Profile.html">
+                  <i class="fa fa-fw fa-edit"></i>
+                  Edit Profile
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                  <i class="fa fa-fw fa-sign-out"></i>
+                  Logout
+                  </a>
+                </li>
               </ul>
             </li>
-
-
           </ul>
         </div>
       </div>
     </nav>
 `
-
