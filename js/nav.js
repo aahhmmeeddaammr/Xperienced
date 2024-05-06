@@ -1,8 +1,5 @@
 let navContainer=document.querySelector("header");
-<<<<<<< HEAD
-=======
-console.log(navContainer);
->>>>>>> d20d7606bd7fc5c5827da935037a88f9d637513c
+
 navContainer.innerHTML=`
 <nav style="background-color: #1E88E5 !important;" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
@@ -105,8 +102,5 @@ navContainer.innerHTML=`
         </div>
       </div>
     </nav>
-<<<<<<< HEAD
 `
-=======
-`
->>>>>>> d20d7606bd7fc5c5827da935037a88f9d637513c
+
