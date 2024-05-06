@@ -25,13 +25,13 @@ navContainer.innerHTML=`
               </a>
             </li>
           </ul>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " >
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-envelope fs-5"></i>
               </a>
 
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <li style="width: 400px; text-wrap:wrap;" class="notification-list-item dropdown-item border-bottom ">
                   <div  class="notification-item-content ms-2 ">
                     <div class="me-2">
@@ -60,7 +60,7 @@ navContainer.innerHTML=`
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell fs-5"></i>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <li style="width: 400px; text-wrap:wrap;" class="notification-list-item dropdown-item border-bottom ">
                   <div  class="notification-item-content ms-2 ">
                     <div class="me-2">
@@ -89,7 +89,7 @@ navContainer.innerHTML=`
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="rounded-circle p-2 d-flex justify-content-center align-items-center bg-danger text-white " style="width: 25px; height: 25px;" id="UserNameFchar">M</span>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
