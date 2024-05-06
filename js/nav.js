@@ -1,5 +1,4 @@
 let navContainer=document.querySelector("header");
-console.log(navContainer);
 navContainer.innerHTML=`
 <nav class="navbar navbar-expand-lg navbar-light nav fixed-top">
 <div class="container ">
