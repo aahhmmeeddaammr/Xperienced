@@ -80,7 +80,7 @@ navContainer.innerHTML=`
 
         <a class=" dropdown-toggle bg-img" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          <span class="rounded-circle p-2 d-flex justify-content-center align-items-center bg-danger text-white " style="width: 38px; height: 38px;" id="UserNameFchar">M</span>
+          <span class="rounded-circle p-2 d-flex m-0 justify-content-center align-items-center bg-danger text-white " style="width: 38px; height: 38px;" id="UserNameFchar">M</span>
         </a>
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
