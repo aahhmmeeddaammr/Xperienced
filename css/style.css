@@ -17,7 +17,33 @@
   --main-duration: 0.5s;
   --main-size: 20px;
 }
-
+.loading{
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load{
+  height: 60px;
+  width: 60px;
+  border: 5px solid #157efb;
+  border-radius: 50%;
+  border-left-color:transparent ;
+  animation: load;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+@keyframes load {
+  to{
+      transform: rotate(360deg);
+  }
+}
 a {
   text-decoration: none;
 
@@ -1933,11 +1959,15 @@ span.action-text {
 
 
 .container .notifications-title {
-
   text-align: center;
-
 }
 
+.mbox:hover .notification-contents{
+  transition: all 0.5s;
+}
+.mbox:hover .notification-contents{
+    transform: scale(1.03);
+}
 
 .center {
   display: flex;
