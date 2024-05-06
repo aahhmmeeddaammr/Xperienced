@@ -42,9 +42,14 @@ function displayNotifications(page) {
         var notificationElement = document.createElement('div');
         notificationElement.classList.add('notification-contents');
         notificationElement.innerHTML = `
-            <p class="notification-title">${notification.title}</p>
-            <p class="notification-contents">${notification.content}</p>
-            <p class="notification-date">${notification.date}</p>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" style="background-color: #58acf6;" class=" mbox shadow p-3 m-4 rounded-4 text-white">
+            
+        <div class=" d-flex align-items-center " >
+            <p class="notification-title  fw-bolder fs-5 p-2">${notification.title}</p>
+        </div>
+        <p  class="notification-contents m-0   shadow p-4 m-2 rounded-4"> ${notification.content}</p>
+            <small class="notification-date  text-black  mb-1 "> <i class="fa-regular fa-calendar-days"></i> ${notification.date}</small>
+        </div>
         `;
         notificationsContainer.appendChild(notificationElement);
     });
@@ -54,22 +59,27 @@ function displayPagination() {
     var totalNotifications = notifications.length;
     var totalPages = Math.ceil(totalNotifications / notificationsPerPage);
     var paginationContainer = document.getElementById('btn-group');
-    paginationContainer.innerHTML = '';
+    paginationContainer.classList.add('center');
 
     for (var i = 1; i <= totalPages; i++) {
-        var button = document.createElement('button');
-        button.textContent = i;
+        var button = document.createElement('input');
+        button.classList.add('btn-check');
+        button.classList.add('btn-check');
+        button.type = 'radio';
+        button.id = 'btnradio' + i;
+        button.name = 'btnradio';
+        button.value = i; // Set the value of the button to the page number
         button.addEventListener('click', function() {
-            currentPage = parseInt(this.textContent);
+            currentPage = parseInt(this.value);
             displayNotifications(currentPage);
         });
-        if (i === currentPage) {
-            button.classList.add('active');
-        }else{
-            button.classList.add('inactive');
-            
-        }
+
+        var label = document.createElement('label');
+        label.setAttribute('for', 'btnradio' + i);
+        label.textContent = i;
+        label.classList.add('btn', 'btn-outline-primary');
         paginationContainer.appendChild(button);
+        paginationContainer.appendChild(label);
     }
 }
 
