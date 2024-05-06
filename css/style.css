@@ -365,46 +365,33 @@ span {
 
 
 /* starrt Benefits */
-
-.Section-4 {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
-  text-align: center;
-  background-size: cover;
-  background: var(--section-background);
-
-}
-
-.Section-4 .header-about h5 {
+.Section-4{
   display: flex;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 63px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: var(--secondary2-color);
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 30px;
 }
-
-.Section-4 .hero-link {
+.box{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap:wrap ;
+}
+.box .icon{
+  background-color: #5e9de065;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
-  width: 215px;
-  font-size: large;
-  font-weight: bold;
-  color: var(--section-background);
-  background: var(--main-color);
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 50px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.icon:hover {
+  font-size: 25px !important;
+
+  cursor: pointer;
+
 }
 
 /* end Benefits */
