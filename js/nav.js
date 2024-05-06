@@ -88,20 +88,20 @@ navContainer.innerHTML = `
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="../Profile.html">
+                  <a class="dropdown-item" href="./Profile.html">
                     <i class="fa fa-fw fa-user"></i>
                     Mohamed Ahmed
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../Account_Balance.html">
+                  <a class="dropdown-item" href="./Account_Balance.html">
                       <i class="fa fa-fw fa-usd"></i>
                       Balance
                   </a>
                 </li>
                 <li><hr class="dropdown-divider"></li>
                 <li>
-                  <a class="dropdown-item" href="../Edit_Profile.html">
+                  <a class="dropdown-item" href="./Edit_Profile.html">
                   <i class="fa fa-fw fa-edit"></i>
                   Edit Profile
                   </a>
