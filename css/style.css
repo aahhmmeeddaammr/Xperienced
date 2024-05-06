@@ -20,19 +20,16 @@
 
 a {
   text-decoration: none;
+
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   background: var(--secondary-color);
+  background-size: 100%;
+  background-repeat: no-repeat;
   scroll-behavior: smooth;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5rem;
 }
 
 p {
@@ -61,13 +58,17 @@ span {
   height: 19.5px;
 }
 
+
 /* start landing */
 
 .Hero_Section {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--secondary2-color);
+  background-image: url("../image/Hero_Section.png");
+  /* background-attachment: fixed; */
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Hero_Section .overlay {
@@ -285,8 +286,6 @@ span {
   font-size: 19px;
   line-height: 39px;
   color: var(--secondary2-color);
-
-
 }
 
 /* end Benefits */
@@ -365,6 +364,7 @@ span {
 
 
 /* starrt Benefits */
+
 .Section-4{
   display: flex;
   justify-content: center;
@@ -389,11 +389,10 @@ span {
 }
 .icon:hover {
   font-size: 25px !important;
-
+  
   cursor: pointer;
 
 }
-
 /* end Benefits */
 
 .Footer {
@@ -822,7 +821,15 @@ p.text-34 {
 /* profile page */
 .mt {
   margin-top: 100px !important;
-} 
+}
+
+.emp-profile {
+  padding: 3%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
 
 .profile-img {
   text-align: center;
@@ -1232,12 +1239,85 @@ tr td span {
 
 /* Start find-assistant page */
 
-.find-assistant {
+
+.container .find-assistant {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: left;
+}
+
+.container .find-assistant .find-assistant-15 {
+  overflow-wrap: break-word;
   font-family: 'Poppins';
   font-weight: 600;
   font-size: 38px;
   color: var(--grey-15, #262626);
-  margin-bottom: 1rem;
+}
+
+.Type_Category {
+  display: flex;
+}
+
+.Type_Category .col-md-3 {
+  padding-left: 25px;
+}
+
+.frame-10 {
+  border-radius: 8px;
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD;
+  display: flex;
+  flex-direction: row;
+  padding: 17.8px 0 17.8px 39px;
+  width: 98%;
+  box-sizing: border-box;
+}
+
+.frame-12 {
+  border-radius: 8px;
+  background: #F1F1F3;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px 0;
+  width: 115px;
+  height: 107.5px;
+  box-sizing: border-box;
+}
+
+.frame-11 {
+  margin: 24.8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.drag-files-here {
+  margin-bottom: 10px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.or-click-to-select-manually {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #656567;
 }
 
 /* end find-assistant page */
@@ -1507,18 +1587,6 @@ tr td span {
 }
 
 
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  z-index: 1000;
-  display: none;
-}   
-
-
-
-
 span.action-text {
   color: var(--secondary-color);
 }
@@ -1572,19 +1640,19 @@ span.action-text {
 
 }
 
-.accunt-content .dropdown-menu {
-  list-style: none;
-  margin: 0;
+.accunt-content .dropdown-menu, .dropdown-menu{
+  /* list-style: none;
+  margin-top: 10;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   position: absolute;
-  min-width: 160px;
+  min-width: 220px;
   background-color: #fff;
   border: 1px solid #e8eaed;
   border-radius: 5px;
   border-top: 0;
   font-family: "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  text-align: left;
+  text-align: left; */
 }
 
 .navbar-collapse .show:after {
@@ -1812,7 +1880,6 @@ span.action-text {
   height: fit-content;
   padding: 0;
   margin: 0;
-  overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1835,18 +1902,18 @@ span.action-text {
   height: 35px;
   background-color: #fff;
   vertical-align: text-top;
-  float: left;
   border-radius: 50%;
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.05);
 }
 
 .notification-list-item .notification-item-content {
-  overflow: hidden;
-  padding-right: 8px;
-  text-align: left;
-  float: left;
+  display: flex;
+  justify-content: space-between;
 }
 
+.dropdown-toggle::after {
+  display: none !important;
+}
 .notification-item-date {
   color: #777;
   font-size: 12px;
@@ -1871,30 +1938,6 @@ span.action-text {
 
 }
 
-.notification-contents {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.notification-contents .notification-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.notification-contents .notification-content {
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.notification-contents .notification-date {
-  color: #999;
-  font-size: 12px;
-}
 
 .center {
   display: flex;
@@ -1918,7 +1961,7 @@ span.action-text {
 /* end notification page */
 
 @media (max-width:685px) {
- .Hero_Section .text-center {
+  .Hero_Section .text-center {
     width: 320px;
     height: 70px;
     margin-right: auto;
