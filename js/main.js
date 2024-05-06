@@ -1,19 +1,7 @@
-(function($) {
 
-	"use strict";
+window.onload=()=>{
+     setTimeout(()=>{
 
-	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
-
-	};
-	fullHeight();
-
-	$('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
-  });
-
-})(jQuery);
+          document.querySelector(".loading").style=`display:none;`
+     },1000)
+}
