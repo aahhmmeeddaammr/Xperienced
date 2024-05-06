@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 if(!localStorage.getItem("done")){
      window.onload=()=>{
           setTimeout(()=>{
