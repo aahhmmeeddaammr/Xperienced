@@ -1806,10 +1806,9 @@ span.action-text {
 
 .notification {
   list-style: none;
-  margin: 0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   position: absolute;
-  width: 480px;
+  width: 400px;
   background-color: #fff;
   border: 1px solid #e8eaed;
   border-radius: 5px;
@@ -1994,7 +1993,22 @@ span.action-text {
     border-bottom: 1px solid var(--secondary-color);
 
   }
-
+  .notification-list,.notification{
+    margin: 0px !important;
+    left: 1%;
+      list-style: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      position: absolute;
+      width: 200px;
+      background-color: #fff;
+      border: 1px solid #e8eaed;
+      border-radius: 5px;
+      border-top: 0;
+      font-family: "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      text-align: left;
+    
+  }
   .roww,
   .rr {
     display: block;
@@ -2456,5 +2470,21 @@ span.action-text {
   }
   .LOGO a img{
     width: 7dvh !important;
+  }
+    .notification-list,.notification{
+    margin: 0px !important;
+    left: 1%;
+      list-style: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      position: absolute;
+      width: 200px;
+      background-color: #fff;
+      border: 1px solid #e8eaed;
+      border-radius: 5px;
+      border-top: 0;
+      font-family: "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      text-align: left;
+    
   }
 }
