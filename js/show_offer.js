@@ -1,37 +1,35 @@
 
 function dspliayoffers() {
+  let x=[1214,21412,124,124,12,412,4,124,]
   var offerListItems = document.getElementById("offer-list-items");
-  offerDataArray.forEach(function(offerData, index) {
+  x.forEach((offerData, index)=> {
       var listItem = document.createElement("div");
       listItem.innerHTML = `
       <div class="box">
-        <p>
-        ${offerData.title}
-        </p>
-        <div class="text">
-        ${offerData.description}
-
+      <p>
+        OOP
+      </p>
+      <div class="text">
+        محتاج حد يشرحلي  يعني ايه  copy constructor<br />
+        و ايه الفرق بينه و بين الـ deep copy and shallow copy
+      </div>
+      <div class="Add">
+        <div class="price">
+          25-50 EGP
         </div>
-        <div class="Add">
-          <div class="price">
-          ${offerData.salary} EGP
-          </div>
-          <div class="btnAR">
-          <a href="Add_Offer.html" class="btn_add">Add an offer</a>
-          <a href="#" class="btn_add" onclick="removeoffer(${index})">Remove offer</a>
-          </div>
+        <a href="Add_Offer.html" class="btn btn-info me-5">  Add an offer</a>
+        <a href="#" class="btn btn-danger" onclick="removeoffer(${index})">Remove offer</a>
 
-        </div>
-      </div>  
-      
-         
+      </div>
+
+   
+  </div>
       `;
       offerListItems.appendChild(listItem);
   });
 }
 function removeoffer(index) {
   offerDataArray.splice(index, 1);
-  
   window.localStorage.setItem('offerDataArray', JSON.stringify(offerDataArray));
   window.location.reload();
 }

@@ -17,7 +17,33 @@
   --main-duration: 0.5s;
   --main-size: 20px;
 }
-
+.loading{
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load{
+  height: 60px;
+  width: 60px;
+  border: 5px solid #157efb;
+  border-radius: 50%;
+  border-left-color:transparent ;
+  animation: load;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+@keyframes load {
+  to{
+      transform: rotate(360deg);
+  }
+}
 a {
   text-decoration: none;
 
@@ -45,37 +71,9 @@ span {
 .header .nav {
   background: var(--main-color);
 }
-
-.header .navbar .navbar-brand .logo {
-  width: 45px;
-  height: 45px;
-  border: 4px solid #FFFFFF;
-  border-radius: 50px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
+.LOGO a img{
+  width: 4dvw;
 }
-
-.sidepar {
-  flex-direction: row;
-  width: fit-content;
-  height: fit-content;
-  box-sizing: border-box;
-  margin-right: 10px;
-}
-
-.chat {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 9.5px 12.8px 11.5px 12.8px;
-  width: 44px;
-  height: 44px;
-  box-sizing: border-box;
-  margin-left: 5px;
-}
-
 .chat a {
   text-decoration: none;
   color: var(--section-background);
@@ -86,116 +84,17 @@ span {
   height: 19.5px;
 }
 
-.header .navbar .collapse .navbar-nav .nav-l {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: var(--section-background);
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.right {
-  width: 105px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.left {
-  margin-right: 10px;
-  width: 130px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.sidebar {
-  background: #fff;
-  width: 235px;
-  position: fixed;
-  top: 0;
-  left: -235px;
-  height: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  padding-top: 90px;
-  transition: all 0.3s ease-out;
-  text-align: center;
-  z-index: 6;
-}
-
-.nav-items .items {
-  display: flex;
-  flex-direction: row
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar ul li {
-  display: block;
-  padding: 5px;
-}
-
-.sidebar ul li a {
-  padding: 8px 15px;
-  font-size: 16px;
-  color: var(--secondary2-color);
-  font-family: arial;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-out;
-  font-weight: 500;
-}
-
-.sidebar ul li a:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 1px;
-  background: var(--main3-color);
-  z-index: -1;
-  transition: all 0.3s ease-out;
-}
-
-.sidebar ul li a:hover:before {
-  width: 100%;
-}
-
-.sidebar ul li a:hover {
-  color: var(--main3-color);
-  background-color: var(--main2-background);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.sidebarshow {
-  left: 0;
-}
-
 
 /* start landing */
 
 .Hero_Section {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--secondary2-color);
+  background-image: url("../image/Hero_Section.png");
+  /* background-attachment: fixed; */
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Hero_Section .overlay {
@@ -388,7 +287,7 @@ span {
   color: var(--main-color);
 }
 
-.Benefits .container .box .i {
+/* .Benefits .container .box .i {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -397,7 +296,7 @@ span {
   isolation: isolate;
   width: 100px;
   height: 100px;
-}
+} */
 
 .Benefits .container .box p {
   font-size: 16px;
@@ -413,8 +312,6 @@ span {
   font-size: 19px;
   line-height: 39px;
   color: var(--secondary2-color);
-
-
 }
 
 /* end Benefits */
@@ -494,47 +391,34 @@ span {
 
 /* starrt Benefits */
 
-.Section-4 {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
-  text-align: center;
-  background-size: cover;
-  background: var(--section-background);
-
-}
-
-.Section-4 .header-about h5 {
+.Section-4{
   display: flex;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 63px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: var(--secondary2-color);
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 30px;
 }
-
-.Section-4 .hero-link {
+.box{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap:wrap ;
+}
+.box .icon{
+  background-color: #5e9de065;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
-  width: 215px;
-  font-size: large;
-  font-weight: bold;
-  color: var(--section-background);
-  background: var(--main-color);
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 50px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  transition: all 0.5s;
 }
+.icon:hover {
+  font-size: 25px !important;
+  
+  cursor: pointer;
 
+}
 /* end Benefits */
 
 .Footer {
@@ -1728,30 +1612,6 @@ tr td span {
   top: 50px;
 }
 
-.dropdown-menu-left {
-  right: auto;
-  left: 0;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  z-index: 1000;
-  display: none;
-  float: right;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  list-style: none;
-  font-size: 14px;
-  text-align: right;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  background-clip: padding-box;
-}
-
 
 span.action-text {
   color: var(--secondary-color);
@@ -1806,19 +1666,19 @@ span.action-text {
 
 }
 
-.accunt-content .dropdown-menu {
-  list-style: none;
-  margin: 0;
+.accunt-content .dropdown-menu, .dropdown-menu{
+  /* list-style: none;
+  margin-top: 10;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   position: absolute;
-  min-width: 160px;
+  min-width: 220px;
   background-color: #fff;
   border: 1px solid #e8eaed;
   border-radius: 5px;
   border-top: 0;
   font-family: "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  text-align: left;
+  text-align: left; */
 }
 
 .navbar-collapse .show:after {
@@ -2028,10 +1888,9 @@ span.action-text {
 
 .notification {
   list-style: none;
-  margin: 0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   position: absolute;
-  width: 480px;
+  width: 400px;
   background-color: #fff;
   border: 1px solid #e8eaed;
   border-radius: 5px;
@@ -2047,7 +1906,6 @@ span.action-text {
   height: fit-content;
   padding: 0;
   margin: 0;
-  overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -2070,18 +1928,18 @@ span.action-text {
   height: 35px;
   background-color: #fff;
   vertical-align: text-top;
-  float: left;
   border-radius: 50%;
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.05);
 }
 
 .notification-list-item .notification-item-content {
-  overflow: hidden;
-  padding-right: 8px;
-  text-align: left;
-  float: left;
+  display: flex;
+  justify-content: space-between;
 }
 
+.dropdown-toggle::after {
+  display: none !important;
+}
 .notification-item-date {
   color: #777;
   font-size: 12px;
@@ -2101,34 +1959,14 @@ span.action-text {
 
 
 .container .notifications-title {
-
   text-align: center;
-
 }
 
-.notification-contents {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.mbox:hover .notification-contents{
+  transition: all 0.5s;
 }
-
-.notification-contents .notification-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.notification-contents .notification-content {
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.notification-contents .notification-date {
-  color: #999;
-  font-size: 12px;
+.mbox:hover .notification-contents{
+    transform: scale(1.03);
 }
 
 .center {
@@ -2153,10 +1991,6 @@ span.action-text {
 /* end notification page */
 
 @media (max-width:685px) {
-  .header .nav {
-    padding: 0px;
-  }
-
   .Hero_Section .text-center {
     width: 320px;
     height: 70px;
@@ -2176,47 +2010,25 @@ span.action-text {
     margin-left: auto;
   }
 
-  .header .navbar .collapse .navbar-nav {
-    height: 500px;
-
+  .LOGO a img{
+    width: 7dvh !important;
   }
-
-  .navbar-collapse .d-flex {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    justify-content: center;
+  .notification-list,.notification{
+    margin: 0px !important;
+    left: 0%;
+      list-style: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      position: absolute;
+      width: 200px;
+      background-color: #fff;
+      border: 1px solid #e8eaed;
+      border-radius: 5px;
+      border-top: 0;
+      font-family: "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      text-align: left;
+    
   }
-
-  .navbar-collapse .sidepar {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-
-  .navbar-light .navbar-toggler {
-    color: rgba(255, 255, 255, 0.55);
-    border-color: rgb(255, 255, 255);
-    margin-right: 25px;
-  }
-
-  .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-
-  li.nav-item {
-    text-align: center;
-    border-top: 1px solid var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
-
-  }
-
   .roww,
   .rr {
     display: block;
@@ -2328,10 +2140,7 @@ span.action-text {
     gap: 0px;
   }
 
-  .Logo {
-    width: 40px;
-    height: 40px;
-  }
+ 
 
   .XperiencedAllRightsReserved {
     display: flex;

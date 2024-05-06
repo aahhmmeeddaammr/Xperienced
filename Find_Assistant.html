@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Xperienced</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.css.map">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -177,23 +174,23 @@
           <label for="exampleFormControlInput1" class="form-label">Description<span class="heading-17-sub-0">*</span></label>
           <textarea class="form-control" id="description" placeholder="Enter a detailed description of your project and attach examples of what you want if possible." rows="3" required></textarea>
       </div>
-      <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Required Skills<span class="heading-17-sub-0">*</span></label>
-          <input type="text" class="form-control" id="skills" placeholder="Identify the most important skills required" required>
-      </div>
-
       <div class="mb-3 Type_Category">
-          <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">Type</label>
+          <div class="col-md-3 d-flex flex-wrap">
+              <label for="validationCustom04" class="form-label w-100">Type:</label>
               <input type="text" class="form-control" id="type" required>
 
           </div>
-          <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Category</label>
-              <input type="text" class="form-control" id="category" required>
+          <div class="col-md-3 d-flex flex-wrap">
+              <label for="validationCustom05" class="form-label w-100">Category:</label>
+              <select name=""  class=" form-control" id="">
+                <option value="" selected hidden>CHOOSE ROLE </option>
+                <option value="">Mathematics</option>
+                <option value="">Computer Sceince</option>
+                <option value="">Other</option>
+              </select>
           </div>
-          <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Expected budget</label>
+          <div class="col-md-3 d-flex flex-wrap">
+              <label for="validationCustom05" class="form-label w-100">Expected budget:</label>
               <input type="text" class="form-control" id="salary" placeholder="25$" required>
           </div>
       </div>

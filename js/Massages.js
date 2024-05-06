@@ -43,9 +43,15 @@ function displayNotifications(page) {
         var notificationElement = document.createElement('div');
         notificationElement.classList.add('notification-contents');
         notificationElement.innerHTML = `
-            <p class="notification-title">${notification.title}</p>
-            <p class="notification-contents">${notification.content}</p>
-            <p class="notification-date">${notification.date}</p>
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" class=" mbox shadow p-3 m-4 rounded-4">
+            
+            <div class=" d-flex align-items-center " >
+                <p class="notification-title  fw-bolder fs-5 p-2">${notification.title}</p>
+            </div>
+            <p class="notification-contents m-0 shadow p-4 m-2 rounded-4"> ${notification.content}</p>
+                <small class="notification-date  text-info  mb-1 "> <i class="fa-regular fa-calendar-days"></i> ${notification.date}</small>
+            </div>
+            
         `;
         notificationsContainer.appendChild(notificationElement);
     });
