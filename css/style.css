@@ -382,8 +382,8 @@ span {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   transition: all 0.5s;
 }
