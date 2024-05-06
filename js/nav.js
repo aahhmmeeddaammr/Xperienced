@@ -56,7 +56,7 @@ navContainer.innerHTML=`
             </li>
 
 
-            <li class="nav-item dropdown ms-auto">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell fs-5"></i>
               </a>
